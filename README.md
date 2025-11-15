@@ -103,6 +103,7 @@ Feedback examples:
 ## Results
 Model	Accuracy
 - CNN(EfficientNetb0) + MLP	-- 98%
+- Only CNN -- 75%
 - EfficientNet (direct) -- 80%
 - Keypoint(using angles/distances) ML models	-- 85–95%
 ---
