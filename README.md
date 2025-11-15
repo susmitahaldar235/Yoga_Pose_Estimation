@@ -79,3 +79,23 @@ pip install -r requirements.txt
 - Extract features using EfficientNet-B0
 - Train MLP (or SVM / Random Forest)
 - Save model + scaler + class names
+
+### Run Real-Time Yoga Pose Detection
+The system will:
+- Detect your pose
+- Display confidence
+- Provide posture feedback
+- Show live heatmap
+---
+## Posture Feedback System
+The system checks:
+- Body alignment
+- Keypoint heights
+- Limb positions
+- Confidence threshold
+
+Feedback examples:
+- "Straighten your back"
+- "Stand up — you seem to be sitting"
+- "Open your hips wider"
+- "Raise your arms higher"
