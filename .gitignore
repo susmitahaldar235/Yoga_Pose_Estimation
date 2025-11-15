@@ -1,0 +1,29 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Datasets (do not upload)
+dataset/
+data/
+*.csv
+
+# Models (use Git LFS instead)
+*.keras
+*.h5
+*.pkl
+*.pt
+*.joblib
+
+# VS Code
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
