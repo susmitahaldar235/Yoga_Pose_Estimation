@@ -99,3 +99,17 @@ Feedback examples:
 - "Stand up — you seem to be sitting"
 - "Open your hips wider"
 - "Raise your arms higher"
+---
+## Results
+Model	Accuracy
+- CNN(EfficientNetb0) + MLP	-- 98%
+- EfficientNet (direct) -- 80%
+- Keypoint(using angles/distances) ML models	-- 85–95%
+---
+## Future Improvements
+
+- Add temporal modeling (LSTM / Transformer)
+- Repetition counting (squats / planks)
+- increase number of yoga poses in dataset
+- Mobile version using TFLite
+- GUI for usability
