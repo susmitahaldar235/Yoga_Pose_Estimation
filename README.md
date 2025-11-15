@@ -28,28 +28,54 @@ Webcam → MediaPipe Pose → Heatmap Generation → EfficientNet-B0 → Feature
 ---
 
 ##  Project Structure
-Yoga_pose_estimation_CV/
-│
-├── scripts/
-│ ├── realtime_pose_mlp.py ( Real-time webcam system)
-│ ├── pose_estimation.py (Heatmap utilities and functions)
-│
-├── notebooks/
-│ ├── train.ipynb  (Main training pipeline)
-│ ├── train2.ipynb
-│ ├── run.ipynb
-│ ├── heatmaps_generated.ipynb
-│ ├── keypoints_dataset.ipynb
-│
-├── models/
-│ ├── mlp_model.pkl  (Trained MLP model)
-│ ├── scaler.pkl 
-│ ├── class_names.json  (Class label mapping)
-│
-├── data/ 
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
+<img width="591" height="686" alt="image" src="https://github.com/user-attachments/assets/8b610dc4-dbae-4fd6-a66a-04e396c682f4" />
 
+---
 
+## 📸 Heatmap Example
+
+Keypoints → Gaussian heatmaps → Jet color map.
+
+This improves generalization and removes dependency on raw landmark coordinates.
+
+---
+
+## Supported Yoga Poses
+
+- Tree Pose  
+- Downdog  
+- Goddess  
+- Plank  
+- Side Plank  
+- Warrior  
+
+(Add more by training.)
+
+---
+
+##  Installation
+
+### 1️. Create Virtual Environment
+```bash
+python -m venv .venv
+.\.venv\Scripts\activate 
+```
+### 2. Install Dependencies
+```
+pip install -r requirements.txt
+```
+### 3️. Download Model Files
+- mlp_model.pkl
+- class_names.json
+- scaler.pkl
+
+---
+### Training the Model
+```
+ notebooks/train2.ipynb
+```
+### Training pipeline:
+- Generate heatmaps
+- Extract features using EfficientNet-B0
+- Train MLP (or SVM / Random Forest)
+- Save model + scaler + class names
