@@ -31,22 +31,22 @@ Webcam → MediaPipe Pose → Heatmap Generation → EfficientNet-B0 → Feature
 Yoga_pose_estimation_CV/
 │
 ├── scripts/
-│ ├── realtime_pose_mlp.py # Real-time webcam system
-│ ├── pose_estimation.py # Heatmap utilities and functions
+│ ├── realtime_pose_mlp.py ( Real-time webcam system)
+│ ├── pose_estimation.py (Heatmap utilities and functions)
 │
 ├── notebooks/
-│ ├── train.ipynb # Main training pipeline
+│ ├── train.ipynb  (Main training pipeline)
 │ ├── train2.ipynb
 │ ├── run.ipynb
 │ ├── heatmaps_generated.ipynb
 │ ├── keypoints_dataset.ipynb
 │
 ├── models/
-│ ├── mlp_model.pkl # Trained MLP model
-│ ├── scaler.pkl # Feature scaler (if used)
-│ ├── class_names.json # Class label mapping
+│ ├── mlp_model.pkl  (Trained MLP model)
+│ ├── scaler.pkl 
+│ ├── class_names.json  (Class label mapping)
 │
-├── data/ # Empty. Dataset not included.
+├── data/ 
 │
 ├── requirements.txt
 ├── README.md
